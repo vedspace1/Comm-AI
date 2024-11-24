@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedspace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .result-box {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Vedspace MVP</h1>
+        <div class="text-center">
+            <button id="startRecord" class="btn btn-primary">Start Recording</button>
+            <button id="stopRecord" class="btn btn-danger" disabled>Stop Recording</button>
+        </div>
+        <div class="result-box">
+            <h4>Transcript:</h4>
+            <p id="transcript">No transcription yet.</p>
+        </div>
+        <div class="result-box">
+            <h4>Sentiment Analysis:</h4>
+            <p id="sentiment">No sentiment data yet.</p>
+        </div>
+        <div class="result-box">
+            <h4>Grammar Feedback:</h4>
+            <p id="grammar">No grammar feedback yet.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
